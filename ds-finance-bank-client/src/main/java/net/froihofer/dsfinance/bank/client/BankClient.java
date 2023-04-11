@@ -4,6 +4,7 @@ import java.util.Properties;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
+
 import net.froihofer.util.AuthCallbackHandler;
 import net.froihofer.util.WildflyJndiLookupHelper;
 import org.slf4j.Logger;
