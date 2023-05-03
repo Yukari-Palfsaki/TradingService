@@ -71,6 +71,5 @@ public class BankImpl implements Bank {
       log.error(e.toString(), e);
       return null;
     }
-
   }
 }
