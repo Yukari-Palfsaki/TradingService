@@ -2,14 +2,13 @@ package net.froihofer.util.jboss.service;
 
 import net.froihofer.dsfinance.ws.trading.TradingWebService;
 import net.froihofer.dsfinance.ws.trading.TradingWebServiceService;
-import net.froihofer.ejb.bank.common.Bank;
+import net.froihofer.ejb.bank.common.TradingInterface;
 import net.froihofer.ejb.bank.common.PublicStockQuoteDTO;
 import net.froihofer.util.jboss.entity.PublicStockQuoteTranslator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.security.PermitAll;
-import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.xml.ws.BindingProvider;
@@ -19,7 +18,7 @@ import java.util.List;
 
 @Stateless(name="BankService")
 @PermitAll
-public class BankImpl implements Bank {
+public class BankImpl implements TradingInterface {
 
   private static final Logger log = LoggerFactory.getLogger(BankImpl.class);
 
