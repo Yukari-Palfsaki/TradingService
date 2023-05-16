@@ -16,7 +16,6 @@ public class Credentials {
     this.properties = new Properties();
     File file = new File ("/Users/yukarisusaki/Desktop/ds-finance-bank.properties.txt");
     FileInputStream fileIO = null;
-
     try {
       fileIO = new FileInputStream(file);
       this.properties.load (fileIO);
