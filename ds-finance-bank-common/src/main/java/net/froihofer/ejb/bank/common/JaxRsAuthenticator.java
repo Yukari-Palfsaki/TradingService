@@ -16,7 +16,6 @@ public class JaxRsAuthenticator implements ClientRequestFilter {
     this.user = user;
     this.password = password;
   }
-
   public void filter(ClientRequestContext requestContext) throws IOException {
     requestContext.getHeaders().add(HttpHeaders.AUTHORIZATION, getBasicAuthentication());
   }

@@ -14,6 +14,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 
 public class PublicStockQuoteDTO implements Serializable {
+  public PublicStockQuoteDTO(){}
   private static final Logger log = LoggerFactory.getLogger(PublicStockQuoteDTO.class);
   @JsonProperty("companyName")
   protected String companyName;
@@ -108,8 +109,5 @@ public class PublicStockQuoteDTO implements Serializable {
     this.marketCapitalization = marketCapitalization;
     this.stockExchange = stockExchange;
     this.symbol = symbol;
-  }
-  public PublicStockQuoteDTO() {
-
   }
 }
